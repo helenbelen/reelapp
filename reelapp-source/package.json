@@ -1,0 +1,27 @@
+{
+  "name": "reelapp",
+  "version": "1.0.0",
+  "description": "App For Streaming Indie Films",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helenbelen/reelapp.git"
+  },
+  "keywords": [
+    "indie",
+    "video",
+    "streaming"
+  ],
+  "author": "Helen Agha",
+  "license": "GPL-3.0-only",
+  "bugs": {
+    "url": "https://github.com/helenbelen/reelapp/issues"
+  },
+  "homepage": "https://github.com/helenbelen/reelapp#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
