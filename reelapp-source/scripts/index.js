@@ -1,17 +1,9 @@
 var express = require('express');
-
 var app = express();
-app.set('view engine', 'pug')
+app.set('view engine', 'pug');
 
-
-// respond with "hello world" when a GET request is made to the homepage
 app.get('/', function (req, res) {
-	
-  res.sendFile(__dirname + '/index.html');
-})
-
-app.get('/info',function(req,res){
-	res.render('index', {title: 'Hey', message: 'Hello there!'})
+  res.render('video-template',{mp4source: '//vjs.zencdn.net/v/oceans.mp4', webmsource: '//vjs.zencdn.net/v/oceans.webm'});
 })
 
 app.listen(3000);
