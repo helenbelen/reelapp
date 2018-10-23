@@ -1,3 +1,24 @@
-<p>
-  movie-detail works!
-</p>
+<div class="button-row">
+  <a mat-raised-button color="primary" [routerLink]="['/movies']"><mat-icon>list</mat-icon></a>
+</div>
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title><h2>{{movie.title}}</h2></mat-card-title>
+    <mat-card-subtitle>{{movie.description}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <dl>
+      <dt>Duration:</dt>
+      <dd>{{movie.duration}}</dd>
+      <dt>Rating:</dt>
+      <dd>{{movie.rating}}</dd>
+      <dt>Description:</dt>
+      <dd>{{movie.description}}</dd>
+      <dt>Year:</dt>
+      <dd>{{movie.year}}</dd>
+    </dl>
+  </mat-card-content>
+  <mat-card-actions>
+   
+  </mat-card-actions>
+</mat-card>

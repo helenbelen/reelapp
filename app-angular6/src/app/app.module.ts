@@ -19,19 +19,19 @@ import {
 
 const appRoutes: Routes = [
 {
+  path: '',
+  redirectTo: 'movies',
+  pathMatch: 'full'
+},
+{
   path: 'movies',
   component: MovieComponent,
   data: {title: 'Movie List'}
 },
 {
-  path: 'movie-detais/:id',
+  path: 'movies/movie-details/:id',
   component: MovieDetailComponent,
   data: {title: 'Movie Details'}
-},
-{
-  path: '',
-  redirectTo: '/movies',
-  pathMatch: 'full'
 }
 ];
 
@@ -63,3 +63,4 @@ const appRoutes: Routes = [
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+export const routingComponents = [MovieComponent, MovieDetailComponent];

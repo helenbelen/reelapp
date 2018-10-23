@@ -1,6 +1,4 @@
-<div class="button-row">
-  <a mat-raised-button color="primary" [routerLink]="['/movie-create']"><mat-icon>add</mat-icon></a>
-</div>
+
 <div class="example-container mat-elevation-z8">
   <table mat-table #table [dataSource]="dataSource">
 
@@ -32,6 +30,6 @@
     </ng-container>
 
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-    <tr mat-row *matRowDef="let row; columns: displayedColumns;" [routerLink]="['/movie-details/', row._id]"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;" [routerLink]="['movie-details',row._id]"></tr>
   </table>
 </div>
