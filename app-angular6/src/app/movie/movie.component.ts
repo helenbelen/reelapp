@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
 })
 export class MovieComponent implements OnInit {
 	movies:any;
-  displayedColumns = ['year', 'title', 'description','thumb'];
+  displayedColumns = ['thumb'];
   dataSource = new MovieDataSource(this.api);
   constructor(private api: ApiService) { }
 
