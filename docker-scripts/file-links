@@ -1,0 +1,3 @@
+#!/bin/bash
+NEW=$1
+sed -i "s/video-link/$NEW/g" index.js
