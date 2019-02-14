@@ -14,3 +14,8 @@
 .button-row {
   margin: 10px 0;
 }
+
+.flex-container{
+  display: flex;
+  flex-wrap: wrap;
+}

@@ -13,6 +13,15 @@ router.get('/', function(req,res,next){
 	});
 });
 
+/* Get All Movies */
+
+router.get('/movies', function(req,res,next){
+	Movie.find(function(err,products){
+		if (err) return next (err);
+		res.json(products);
+	});
+});
+
 /* Get Single Movie By Id */
 router.get('/:id', function(req,res,next){
 	Movie.findById(req.params.id, function(err,post){
