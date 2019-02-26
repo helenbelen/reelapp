@@ -4,7 +4,8 @@
   "description": "App For Streaming Indie Films",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "node scripts/index.js"
   },
   "repository": {
     "type": "git",

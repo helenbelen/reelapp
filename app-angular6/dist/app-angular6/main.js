@@ -100,7 +100,7 @@ var ApiService = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".example-card {\r\n  max-width: 500px;\r\n}\r\n\r\n.button-row {\r\n  margin: 10px 0;\r\n}"
+module.exports = ".example-card {\n  max-width: 500px;\n}\n\n.button-row {\n  margin: 10px 0;\n}"
 
 /***/ }),
 
@@ -194,6 +194,12 @@ var appRoutes = [
     },
     {
         path: 'movies',
+        redirectTo: 'movies',
+        pathMatch: 'full'
+    },
+    {
+        path: 'movies',
+        pathMatch: 'full',
         component: _movie_movie_component__WEBPACK_IMPORTED_MODULE_4__["MovieComponent"],
         data: { title: 'Movie List' }
     },
@@ -247,7 +253,7 @@ var routingComponents = [_movie_movie_component__WEBPACK_IMPORTED_MODULE_4__["Mo
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = ".example-container {\n  display: flex;\n  flex-direction: column;\n  max-height: 500px;\n  min-width: 300px;\n  overflow: auto;\n}\n\n.year-col {\n  flex: 0 0 100px !important;\n  white-space: unset !important;\n}\n\n.button-row {\n  margin: 10px 0;\n}\n\n.flex-container{\n  display: flex;\n  flex-wrap: wrap;\n}\n"
 
 /***/ }),
 
@@ -325,7 +331,7 @@ var MovieDetailComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".example-container {\r\n  display: flex;\r\n  flex-direction: column;\r\n  max-height: 500px;\r\n  min-width: 300px;\r\n  overflow: auto;\r\n}\r\n\r\n.year-col {\r\n  flex: 0 0 100px !important;\r\n  white-space: unset !important;\r\n}\r\n\r\n.button-row {\r\n  margin: 10px 0;\r\n}"
+module.exports = "\ntable {\n  width: 100%;\n}\n"
 
 /***/ }),
 
@@ -336,7 +342,7 @@ module.exports = ".example-container {\r\n  display: flex;\r\n  flex-direction: 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n<div class=\"example-container mat-elevation-z8\">\n  <table mat-table #table [dataSource]=\"dataSource\">\n\n    <!--- Note that these columns can be defined in any order.\n          The actual rendered columns are set as a property on the row definition\" -->\n\n    <!-- Year Column -->\n    <ng-container matColumnDef=\"year\">\n      <th mat-header-cell *matHeaderCellDef> Year </th>\n      <td mat-cell *matCellDef=\"let element\" class=\"year-col\"> {{element.year}} </td>\n    </ng-container>\n\n    <!-- Title Column -->\n    <ng-container matColumnDef=\"title\">\n      <th mat-header-cell *matHeaderCellDef> Title </th>\n      <td mat-cell *matCellDef=\"let element\"> {{element.title}} </td>\n    </ng-container>\n\n    <!-- Description Column -->\n    <ng-container matColumnDef=\"description\">\n      <th mat-header-cell *matHeaderCellDef> Description </th>\n      <td mat-cell *matCellDef=\"let element\"> {{element.description}} </td>\n    </ng-container>\n\n     <!-- Thumb Column -->\n    <ng-container matColumnDef=\"thumb\">\n      <th mat-header-cell *matHeaderCellDef> Thumbnail </th>\n      <td mat-cell *matCellDef=\"let element\"> {{element.thumb}} </td>\n    </ng-container>\n\n    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\n    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\" [routerLink]=\"['movie-details',row._id]\"></tr>\n  </table>\n</div>"
+module.exports = "\n<div class=\"example-container mat-elevation-z8\">\n  <table mat-table #table [dataSource]=\"dataSource\">\n    <ng-container matColumnDef=\"thumb\">\n      <th mat-header-cell *matHeaderCellDef></th>\n      <td mat-cell *matCellDef=\"let element\">\n          <img src={{element.thumb}} alt={{element.description}} style=\"width:250px;height:300px;\">\n          <h4>{{element.title}} {{element.year}}</h4>\n          <h5>{{element.duration}} minutes</h5>\n          <h6>{{element.rating}}</h6>\n      </td>\n    </ng-container>\n    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\n    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\" [routerLink]=\"['movie-details',row._id]\"></tr>\n  </table>\n</div>\n"
 
 /***/ }),
 
@@ -379,7 +385,7 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var MovieComponent = /** @class */ (function () {
     function MovieComponent(api) {
         this.api = api;
-        this.displayedColumns = ['year', 'title', 'description', 'thumb'];
+        this.displayedColumns = ['thumb'];
         this.dataSource = new MovieDataSource(this.api);
     }
     MovieComponent.prototype.ngOnInit = function () {
@@ -483,7 +489,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\HelenBelen\Documents\Code\reelapp\app-angular6\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /Users/HelenBelen/Documents/Code/reelapp/app-angular6/src/main.ts */"./src/main.ts");
 
 
 /***/ })
