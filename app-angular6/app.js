@@ -6,7 +6,7 @@ var logger = require('morgan');
 var apiRouter = require('./routes/movie');
 var app = express();
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/app-angular6',{promiseLibrary: require('bluebird')})
+mongoose.connect('mongodb://localhost:27017/local',{promiseLibrary: require('bluebird')})
 .then(()=> console.log('connection successful'))
 .catch((err)=> console.error(err));
 app.use(logger('dev'));
@@ -32,7 +32,7 @@ app.use(function(err,req,res,next){
 
 	//render the error page
 	res.status(err.status || 500);
-	res.send(err.status);
+	res.sendStatus(err.status);
 });
 
 module.exports = app;

@@ -25,6 +25,12 @@ const appRoutes: Routes = [
 },
 {
   path: 'movies',
+  redirectTo: 'movies',
+  pathMatch: 'full'
+},
+{
+  path: 'movies',
+  pathMatch: 'full',
   component: MovieComponent,
   data: {title: 'Movie List'}
 },
@@ -36,7 +42,7 @@ const appRoutes: Routes = [
 ];
 
 
- 
+
 
 @NgModule({
   declarations: [
@@ -58,7 +64,9 @@ const appRoutes: Routes = [
     MatButtonModule,
     MatCardModule,
     MatFormFieldModule
+
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })
