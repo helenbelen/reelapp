@@ -1,7 +1,9 @@
 # Reel App
 
+[![Build Status](https://cloud.drone.io/api/badges/helenbelen/reelapp/status.svg)](https://cloud.drone.io/helenbelen/reelapp)
+
 Reel App is web app allowing people to view independent films. This goal of the project is to
-attempt a Netflix implementation using a MEAN stack and docker containers. 
+attempt a Netflix implementation using a MEAN stack and docker containers.
 
   - Video Pages are generated using Express.js and Pug templates
   - Main UI is created using MongoDB and Agular.js

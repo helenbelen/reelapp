@@ -7,4 +7,6 @@ pipeline:
       Dockerfile: reelapp-source/Dockerfile
 trigger:
   event:
-    - pull_request
+    - push
+  branch:
+    - master
