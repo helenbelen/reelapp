@@ -5,9 +5,9 @@ pipeline:
       repo: helenbelen111/reelapp
       context: reelapp-source
       Dockerfile: reelapp-source/Dockerfile
-      
-trigger:
-  event:
-    - push
-  branch:
-    - master
+
+    trigger:
+      event:
+        - push
+      branch:
+        - master
