@@ -1,8 +1,9 @@
 pipeline:
     docker:
+      when:
+        event: pull_request
       secrets: [docker_username, docker_password]
       image: plugins/docker
       repo: helenbelen111/reelapp
       context: reelapp-source
       Dockerfile: reelapp-source/Dockerfile
-    
