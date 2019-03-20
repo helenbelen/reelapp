@@ -1,0 +1,11 @@
+{
+  "name": "docker-start-api",
+  "version": "1.0.0",
+  "description": "\"App To Spin Up Docker Instances for videos\"",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.0.0",
+    "mongoose": "^5.4.0",
+    "body-parser": "^1.18.0"
+  }
+}
