@@ -1,11 +1,10 @@
 pipeline:
     docker:
       when:
-        event:
-          - push
         branch:
           - master
-
+        event:
+          - push
       secrets: [docker_username, docker_password]
       image: plugins/docker
       repo: helenbelen111/reelapp
