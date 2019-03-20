@@ -8,5 +8,5 @@ pipeline:
       secrets: [docker_username, docker_password]
       image: plugins/docker
       repo: helenbelen111/reelapp
-      context: reelapp-source
+      context: reelapp-video-watch
       Dockerfile: reelapp-video-watch/Dockerfile
