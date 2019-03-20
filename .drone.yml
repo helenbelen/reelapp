@@ -10,4 +10,4 @@ pipeline:
       image: plugins/docker
       repo: helenbelen111/reelapp
       context: reelapp-source
-      Dockerfile: reelapp-source/Dockerfile
+      Dockerfile: reelapp-video-watch/Dockerfile
