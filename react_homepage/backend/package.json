@@ -1,0 +1,25 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "backend of movie page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helenbelen/reelapp.git"
+  },
+  "keywords": [
+    "movies"
+  ],
+  "author": "Helen",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently":"^4.0.1"
+  },
+  "bugs": {
+    "url": "https://github.com/helenbelen/reelapp/issues"
+  },
+  "homepage": "https://github.com/helenbelen/reelapp#readme"
+}
