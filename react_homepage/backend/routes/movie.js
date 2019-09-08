@@ -3,7 +3,11 @@ var router = express.Router();
 var mongoose = require('mongoose');
 var Movie = require('../models/Movie.js');
 
-
+router.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
 /* Get All Movies */
 
 router.get('/', function(req,res,next){

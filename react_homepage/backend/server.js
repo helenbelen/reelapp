@@ -16,5 +16,6 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 app.use('/api',apiRouter);
+app.disable('etag');
 const API_PORT = 3001;
 app.listen(API_PORT, () => console.log(`LISTENING ON PORT ${API_PORT}`));
